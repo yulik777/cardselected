@@ -1,0 +1,96 @@
+$textColor: rgb(239, 247, 247); 
+$textsize: 50px;
+
+.card-name{
+    font-weight: bold;    
+    height: 40px;
+    color: #fff;
+}
+.card-price {
+   font-size: $textsize;
+   font-weight: 500;
+}
+.card-speed {
+height: 40px;
+background-color: rgb(234, 225, 225);
+}
+
+.card-text{
+    height: 40px;
+    background-color: rgb(245, 239, 239);  
+}
+
+.currency {
+    height: 10px;
+    display: flex;
+}
+.card-totalprice {
+    height: 150px;
+    color: $textColor;
+}
+
+.selected{
+    border: 5px solid rgb(223, 138, 236);
+    font-weight: bolder;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;}
+    div {
+        border: solid 0.5px #fff;
+        padding: 16px;}
+
+    .App {
+        
+            &:first-child {
+              .card-name{
+                background-color: #2cc1d5;}
+               .card-totalprice {
+                  background-color: #3799a6;
+                }
+            }
+            
+              &:nth-child(2) {
+              .card-name{
+                background-color: #26ba89;}
+               .card-totalprice {
+                  background-color: #37a660;
+                }}
+              
+            
+                &:nth-child(3) {
+                  .card-name{
+                    background-color: #d66b53;}
+                   .card-totalprice {
+                      background-color: #ee534b;
+                    }}
+            
+              &:last-child {
+                .card-name{
+                  background-color: #494544;}
+                 .card-totalprice {
+                    background-color: #7b7979;
+                  }}
+              }
+
+     
+.selected:hover{
+  transform: scale(1.2);
+  border: 5px solid rgb(223, 138, 236);
+  font-weight: bolder;
+  max-width: 300px;
+  }
+
+
+
+  
+  
+ 
+
+  
+ 
+  
+
+
